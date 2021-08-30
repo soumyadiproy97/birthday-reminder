@@ -2,12 +2,14 @@ import { useState } from 'react';
 import './App.css';
 import data from './util/data';
 import List from './util/list'
+
 //herloooo
 function App() {
   const [people, setPeople] = useState(data)
   return (
     <>
       <main>
+        
         <section className='container'>
           <h3>{people.length} birthdays today</h3>
           <List people={people}/>
